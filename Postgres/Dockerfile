@@ -1,8 +1,8 @@
 FROM postgres:16.2
 
 ENV POSTGRES_USER=user 
-ENV POSTGRES_PASSWORD=qwerty124
-ENV POSTGRES_DB=pg-db
+ENV POSTGRES_PASSWORD=password
+ENV POSTGRES_DB=database-name
 
 
 COPY init.sql /docker-entrypoint-initdb.d/
